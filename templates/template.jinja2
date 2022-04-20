@@ -1,0 +1,6 @@
+  - job_name: "fake_job_{{ "%010d"|format(number) }}"
+    metrics_path: '/{{ number }}/metrics'
+    static_configs:
+    - targets: [
+        "localhost:8888"
+    ]
