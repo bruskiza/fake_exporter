@@ -1,0 +1,93 @@
+# HELP go_gc_duration_seconds A summary of the pause duration of garbage collection cycles.
+# HELP go_goroutines Number of goroutines that currently exist.
+# HELP go_info Information about the Go environment.
+# HELP go_memstats_alloc_bytes Number of bytes allocated and still in use.
+# HELP go_memstats_alloc_bytes_total Total number of bytes allocated, even if freed.
+# HELP go_memstats_buck_hash_sys_bytes Number of bytes used by the profiling bucket hash table.
+# HELP go_memstats_frees_total Total number of frees.
+# HELP go_memstats_gc_cpu_fraction The fraction of this program's available CPU time used by the GC since the program started.
+# HELP go_memstats_gc_sys_bytes Number of bytes used for garbage collection system metadata.
+# HELP go_memstats_heap_alloc_bytes Number of heap bytes allocated and still in use.
+# HELP go_memstats_heap_idle_bytes Number of heap bytes waiting to be used.
+# HELP go_memstats_heap_inuse_bytes Number of heap bytes that are in use.
+# HELP go_memstats_heap_objects Number of allocated objects.
+# HELP go_memstats_heap_released_bytes Number of heap bytes released to OS.
+# HELP go_memstats_heap_sys_bytes Number of heap bytes obtained from system.
+# HELP go_memstats_last_gc_time_seconds Number of seconds since 1970 of last garbage collection.
+# HELP go_memstats_lookups_total Total number of pointer lookups.
+# HELP go_memstats_mallocs_total Total number of mallocs.
+# HELP go_memstats_mcache_inuse_bytes Number of bytes in use by mcache structures.
+# HELP go_memstats_mcache_sys_bytes Number of bytes used for mcache structures obtained from system.
+# HELP go_memstats_mspan_inuse_bytes Number of bytes in use by mspan structures.
+# HELP go_memstats_mspan_sys_bytes Number of bytes used for mspan structures obtained from system.
+# HELP go_memstats_next_gc_bytes Number of heap bytes when next garbage collection will take place.
+# HELP go_memstats_other_sys_bytes Number of bytes used for other system allocations.
+# HELP go_memstats_stack_inuse_bytes Number of bytes in use by the stack allocator.
+# HELP go_memstats_stack_sys_bytes Number of bytes obtained from system for stack allocator.
+# HELP go_memstats_sys_bytes Number of bytes obtained from system.
+# HELP go_threads Number of OS threads created.
+# HELP node_boot_time_seconds Unix time of last boot, including microseconds.
+# HELP node_cpu_seconds_total Seconds the CPUs spent in each mode.
+# HELP node_disk_read_bytes_total The total number of bytes read successfully.
+# HELP node_disk_read_errors_total The total number of read errors.
+# HELP node_disk_read_retries_total The total number of read retries.
+# HELP node_disk_read_sectors_total The total number of sectors read successfully.
+# HELP node_disk_read_time_seconds_total The total number of seconds spent by all reads.
+# HELP node_disk_reads_completed_total The total number of reads completed successfully.
+# HELP node_disk_write_errors_total The total number of write errors.
+# HELP node_disk_write_retries_total The total number of write retries.
+# HELP node_disk_write_time_seconds_total This is the total number of seconds spent by all writes.
+# HELP node_disk_writes_completed_total The total number of writes completed successfully.
+# HELP node_disk_written_bytes_total The total number of bytes written successfully.
+# HELP node_disk_written_sectors_total The total number of sectors written successfully.
+# HELP node_exporter_build_info A metric with a constant '1' value labeled by version, revision, branch, and goversion from which node_exporter was built.
+# HELP node_filesystem_avail_bytes Filesystem space available to non-root users in bytes.
+# HELP node_filesystem_device_error Whether an error occurred while getting statistics for the given device.
+# HELP node_filesystem_files Filesystem total file nodes.
+# HELP node_filesystem_files_free Filesystem total free file nodes.
+# HELP node_filesystem_free_bytes Filesystem free space in bytes.
+# HELP node_filesystem_readonly Filesystem read-only status.
+# HELP node_filesystem_size_bytes Filesystem size in bytes.
+# HELP node_load1 1m load average.
+# HELP node_load15 15m load average.
+# HELP node_load5 5m load average.
+# HELP node_memory_active_bytes Memory information field active_bytes.
+# HELP node_memory_compressed_bytes Memory information field compressed_bytes.
+# HELP node_memory_free_bytes Memory information field free_bytes.
+# HELP node_memory_inactive_bytes Memory information field inactive_bytes.
+# HELP node_memory_swap_total_bytes Memory information field swap_total_bytes.
+# HELP node_memory_swap_used_bytes Memory information field swap_used_bytes.
+# HELP node_memory_swapped_in_bytes_total Memory information field swapped_in_bytes_total.
+# HELP node_memory_swapped_out_bytes_total Memory information field swapped_out_bytes_total.
+# HELP node_memory_total_bytes Memory information field total_bytes.
+# HELP node_memory_wired_bytes Memory information field wired_bytes.
+# HELP node_network_receive_bytes_total Network device statistic receive_bytes.
+# HELP node_network_receive_errs_total Network device statistic receive_errs.
+# HELP node_network_receive_multicast_total Network device statistic receive_multicast.
+# HELP node_network_receive_packets_total Network device statistic receive_packets.
+# HELP node_network_transmit_bytes_total Network device statistic transmit_bytes.
+# HELP node_network_transmit_errs_total Network device statistic transmit_errs.
+# HELP node_network_transmit_multicast_total Network device statistic transmit_multicast.
+# HELP node_network_transmit_packets_total Network device statistic transmit_packets.
+# HELP node_power_supply_battery_health IOKit Power Source information field battery_health for <power_supply>.
+# HELP node_power_supply_charging IOKit Power Source information field charging for <power_supply>.
+# HELP node_power_supply_current_ampere IOKit Power Source information field current_ampere for <power_supply>.
+# HELP node_power_supply_current_capacity IOKit Power Source information field current_capacity for <power_supply>.
+# HELP node_power_supply_info IOKit Power Source information for <power_supply>.
+# HELP node_power_supply_max_capacity IOKit Power Source information field max_capacity for <power_supply>.
+# HELP node_power_supply_power_source_state IOKit Power Source information field power_source_state for <power_supply>.
+# HELP node_power_supply_present IOKit Power Source information field present for <power_supply>.
+# HELP node_power_supply_time_to_empty_seconds IOKit Power Source information field time_to_empty_seconds for <power_supply>.
+# HELP node_power_supply_time_to_full_seconds IOKit Power Source information field time_to_full_seconds for <power_supply>.
+# HELP node_scrape_collector_duration_seconds node_exporter: Duration of a collector scrape.
+# HELP node_scrape_collector_success node_exporter: Whether a collector succeeded.
+# HELP node_textfile_scrape_error 1 if there was an error opening or reading a file, 0 otherwise
+# HELP node_thermal_cpu_available_cpu Reflects how many, if any, CPUs have been taken offline. Represented as an integer number of CPUs (0 - Max CPUs).
+# HELP node_thermal_cpu_scheduler_limit_ratio Represents the percentage (0-100) of CPU time available. 100% at normal operation. The OS may limit this time for a percentage less than 100%.
+# HELP node_thermal_cpu_speed_limit_ratio Defines the speed & voltage limits placed on the CPU. Represented as a percentage (0-100) of maximum CPU speed.
+# HELP node_time_seconds System time in seconds since epoch (1970).
+# HELP node_time_zone_offset_seconds System time zone offset in seconds.
+# HELP node_uname_info Labeled system information as provided by the uname system call.
+# HELP promhttp_metric_handler_errors_total Total number of internal errors encountered by the promhttp metric handler.
+# HELP promhttp_metric_handler_requests_in_flight Current number of scrapes being served.
+# HELP promhttp_metric_handler_requests_total Total number of scrapes by HTTP status code.
