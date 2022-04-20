@@ -2,8 +2,6 @@
 
 metrics = [
     "go_gc_duration_seconds",
-    "go_gc_duration_seconds_count",
-    "go_gc_duration_seconds_sum",
     "go_goroutines",
     "go_info",
     "go_memstats_alloc_bytes",
@@ -97,3 +95,29 @@ metrics = [
     "promhttp_metric_handler_requests_in_flight",
     "promhttp_metric_handler_requests_total"
 ]
+
+helpers = open("helpers/help.txt").read().splitlines()
+types = open("helpers/types.txt").read().splitlines()
+
+
+def enrich():
+    complete_metrics = {}
+    
+    for metric in metrics:
+        complete_metrics[metric] = {}
+        for type in types:
+            if metric in type:
+                complete_metrics[metric]["type"] = type
+                break
+        for help in helpers:
+            if metric in help:
+                complete_metrics[metric]["help"] = help
+                break
+    
+    
+    return complete_metrics
+
+
+if __name__ == "__main__":
+    import json
+    print(json.dumps(enrich(), indent=4))
